@@ -1,15 +1,43 @@
 # Sasona
 
-A decentralised payment network for AI agents. An agent says what it wants to buy, the network pays the seller, and the agent is billed only for what actually arrived.
+A decentralised payment network for AI agents: protected payments, and chargebacks when a purchase does not deliver.
 
-We are building it in the open, one part at a time. The plan and the proof of each finished part are in [`roadmap`](https://github.com/sasona-network/roadmap).
+## The coin is live on Solana mainnet
+
+SASONA launched on 20 October 2026. **The only real SASONA is this contract address:**
+
+```
+8xH5RFEkSyneYBhCZh5gi2svgdyrDCREW9SxCfKuYgFd
+```
+
+Other people opened pools with fake coins using the same name. Only the address counts. Do not search for it by name.
+
+**Check it yourself.** Open the address on a Solana explorer:
+- the mint authority and the freeze authority are both none, so nobody can make more or freeze a wallet
+- the name, ticker and logo cannot be changed
+- the supply is at most 1,000,000,000, made at launch, and nobody can add to it
+- the liquidity added to the pool at launch is locked for good
+- the three locks release every hour over a year and cannot be cancelled
+
+Or run [`sasona-coin`](https://github.com/sasona-network/sasona-coin)'s checker, which reads these from the chain.
+
+Every address is listed on [sasona.ai/sasona-coin](https://sasona.ai/sasona-coin).
+
+## The network
+
+The coin is live. The network's contract is not built yet, and the network is not open.
+
+The repositories below, apart from `sasona-coin`, hold an earlier design. It was built on Solana devnet and has since been superseded. They are kept as a record.
 
 | Repository | What's in it |
 |---|---|
-| [`roadmap`](https://github.com/sasona-network/roadmap) | The plan, and a proof for every finished part |
-| [`sasona-protocol`](https://github.com/sasona-network/sasona-protocol) | The rules every implementation follows |
-| [`sasona-program`](https://github.com/sasona-network/sasona-program) | The Solana contract |
-| [`sasona-node`](https://github.com/sasona-network/sasona-node) | What a member runs to test services |
-| [`sasona-sdk`](https://github.com/sasona-network/sasona-sdk) | Use the pool from an agent or an app |
+| [`sasona-coin`](https://github.com/sasona-network/sasona-coin) | Check the SASONA coin from the chain |
+| [`roadmap`](https://github.com/sasona-network/roadmap) | The first design's plan, and a proof for each part built on devnet |
+| [`sasona-protocol`](https://github.com/sasona-network/sasona-protocol) | The first design's rules |
+| [`sasona-program`](https://github.com/sasona-network/sasona-program) | The first design's devnet contract |
+| [`sasona-node`](https://github.com/sasona-network/sasona-node) | The first design's member software |
+| [`sasona-sdk`](https://github.com/sasona-network/sasona-sdk) | The first design's client |
 
-Everything runs on Solana devnet. The coin has no value.
+Site: [sasona.ai](https://sasona.ai). On X: [@SasonaNetwork](https://x.com/SasonaNetwork).
+
+Nothing here is a recommendation to buy SASONA. If you buy it, you could lose all of your money.
